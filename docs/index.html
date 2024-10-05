@@ -4,14 +4,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Printable</title>
+  <title>Стикеры</title>
   <link rel="icon" href="data:;base64,=">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <style></style>
+  <style>
+    :root {
+      font-family: "Noto Sans", sans-serif;
 
-  Test text
+      /* Цвета */
+      --text-color: #dddddd;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .background {
+      width: 100%;
+      height: auto;
+    }
+
+    .objects-box {
+      inset: 20px;
+      position: absolute;
+    }
+  </style>
+  <style>
+    /* Позиционирование объектов */
+    .object {
+      position: absolute;
+    }
+
+    .horizontal-left {
+      left: 0;
+    }
+
+    .horizontal-center {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .horizontal-right {
+      right: 0;
+    }
+
+    .vertical-top {
+      top: 0;
+    }
+
+    .vertical-center {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .vertical-bottom {
+      bottom: 0;
+    }
+  </style>
+  <style>
+    /* Стили объектов */
+
+    .text-large {
+      font-size: 40px;
+      font-weight: 500;
+      color: var(--text-color);
+    }
+  </style>
+
+  <section class="container">
+    <img src="https://placehold.co/600x400/333333/DDDDDD/png?text=&#955;" class="background">
+
+    <div class="objects-box">
+      <div class="object horizontal-left vertical-top">
+        <div class="text-large">Название товара</div>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
