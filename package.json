@@ -1,7 +1,7 @@
 {
   "name": "n_adv",
   "scripts": {
-    "dev": "live-server --port=3000 src"
+    "dev": "live-server --port=3000 docs"
   },
   "author": "",
   "license": "ISC",
